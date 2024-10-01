@@ -54,4 +54,7 @@ function gameOver() {
   show("final-score");
   const lastScore = getElementById("score");
   setElementById("last-score", lastScore);
+
+  const currentText = document.getElementById("current-text");
+  removeBg(currentText.innerText);
 }
