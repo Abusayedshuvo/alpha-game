@@ -24,6 +24,9 @@ function play() {
 
 function keyUpEvent(event) {
   const playerPress = event.key;
+  if (playerPress === "Escape") {
+    gameOver();
+  }
   const needPress = document
     .getElementById("current-text")
     .innerText.toLowerCase();
@@ -44,7 +47,6 @@ function keyUpEvent(event) {
       gameOver();
     }
   }
-  k;
 }
 
 document.addEventListener("keyup", keyUpEvent);
